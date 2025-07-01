@@ -1,0 +1,22 @@
+.btn_favorite {
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 200;
+}
+
+.btn_favorite svg {
+    transition: fill 0.6s;
+}
+
+.btn_favorite svg path {
+    transition: stroke 0.4s;
+}
+
+.btn_favorite:hover svg path {
+    stroke: #df1aa7;
+}

@@ -4,4 +4,6 @@
     grid-template-rows: repeat(1, 1fr);
     grid-auto-flow: row;
     gap: 0.6rem;
+    margin-top: 6.25rem;
+    padding: 1rem;
 }

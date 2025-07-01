@@ -1,11 +1,26 @@
 .card {
     background-color: #efefef;
+    border-radius: 1rem;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-.cart__title {
-
+.card__title {
+    font-size: 2rem;
 }
 
-.cart__img {
-    
+.card__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import styles from "./ButtonIsFavorite.module.css";
 
 function ButtonIsFavorite() {
@@ -39,4 +39,4 @@ function ButtonIsFavorite() {
   );
 }
 
-export default ButtonIsFavorite;
+export default memo(ButtonIsFavorite);

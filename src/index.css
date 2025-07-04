@@ -1,0 +1,7 @@
+html {
+    background-color: rgb(234, 226, 232);
+}
+
+html.dark {
+    background-color: rgb(26, 1, 31);
+}

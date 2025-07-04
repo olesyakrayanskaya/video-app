@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import styles from "./CardDetails.module.css";
 import { useMemo } from "react";
 import { ITEMS } from "../../data";
+import { Link } from "react-router-dom";
+
 
 function CardDetails() {
   const { id } = useParams();
@@ -16,6 +18,7 @@ function CardDetails() {
       <h1>id: #{id}</h1>
       <img src={card.image} alt={card.title} />
       <h2>{card.title}</h2>
+      <Link to={'/'}>Home</Link>
     </div>
   );
 }

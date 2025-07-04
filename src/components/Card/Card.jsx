@@ -29,7 +29,7 @@ function Card({ image, title, videoId, id }) {
         style={{ position: "absolute", right: "3rem", top: "1rem" }}
         onClick={openVideo}
       >
-        ⏵
+        🎥
       </button>
       <Link style={{ position: "absolute", right: "6rem", top: "1rem" }} to={`/card/${id}`}>link</Link>
       <ButtonIsFavorite />

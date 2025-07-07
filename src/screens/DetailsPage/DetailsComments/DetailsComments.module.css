@@ -1,23 +1,31 @@
 .comments {
-
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
 }
 
 .comments__title {
-
+    font-size: 1.2rem;
 }
 
 .comments__list {
-
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+    list-style: none;
 }
 
 .comments__item {
-
+    padding: 0.5rem;
+    border: 1px solid #413f3f;
 }
 
 .comments__name {
-
+    font-size: 1.1rem;
 }
 
 .comments__text {
-    
+    font-size: 0.8rem;
 }

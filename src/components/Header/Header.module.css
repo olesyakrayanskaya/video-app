@@ -3,7 +3,11 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 6.25rem;
-    background-color: rgb(141, 137, 137);
+    height: var(--header-height, 3.25rem);
+    background-color: var(--header-bgc, #db66a19d);
     z-index: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: background-color var(--transition-time, 0.4s);
 }

@@ -6,7 +6,7 @@ function ButtonPlayVideo({onClick}) {
       className={styles.btn_video}
       onClick={onClick}
     >
-      🎥
+      <span>&#127909;</span>
     </button>
   );
 }

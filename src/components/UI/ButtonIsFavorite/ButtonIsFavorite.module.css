@@ -8,11 +8,11 @@
 }
 
 .btn_favorite svg {
-    transition: fill 0.6s;
+    transition: fill var(--transition-time, 0.4s);
 }
 
 .btn_favorite svg path {
-    transition: stroke 0.4s;
+    transition: stroke var(--transition-time, 0.4s);
 }
 
 .btn_favorite:hover svg path {

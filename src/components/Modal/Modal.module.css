@@ -1,5 +1,5 @@
 .modal{
-    background-color: rgba(97, 96, 96, 0.85);
+    background-color: var(--modal-bcg, #454345);
     position: fixed;
     inset: 0;
     z-index: 900;
@@ -9,5 +9,21 @@
 }
 
 .modal__inner {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
+.modal__close {
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    top: 1rem;
+    right: 15%;
+    color: #FFF;
 }

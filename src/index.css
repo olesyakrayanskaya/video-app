@@ -1,7 +1,73 @@
+:root {
+    --dark-bgc: #300330;
+    --light-bgc: #f9d1e5;
+    --header-bgc: #db66a19d;
+    --text-color: #0e010e;
+    --text-hover-color: #3c0856;
+    --header-height: 3.25rem;
+    --transition-time: 0.4s;
+    --modal-bcg: #454345;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
 html {
-    background-color: rgb(234, 226, 232);
+    background-color: var(--light-bgc, #f9d1e5);
+    color: var(--text-color, #0e010e);
+    transition: background-color var(--transition-time, 0.4s);
 }
 
 html.dark {
-    background-color: rgb(26, 1, 31);
+    background-color: var(--dark-bgc, #300330);
 }

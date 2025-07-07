@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./screens/App";
+import App from "./screens/Home/App";
 import CardDetails from "./screens/DetailsPage/CardDetails/CardDetails";
 
 function MainRoutes() {

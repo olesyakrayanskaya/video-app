@@ -1,5 +1,6 @@
 import styles from "./Card.module.css";
-import ButtonIsFavorite from "../ButtonIsFavorite/ButtonIsFavorite";
+import ButtonIsFavorite from "../UI/ButtonIsFavorite/ButtonIsFavorite";
+import ButtonPlayVideo from "../UI/ButtonPlayVideo/ButtonPlayVideo";
 import { useCallback, useState } from "react";
 import Modal from "../Modal/Modal";
 import { Link } from "react-router-dom";
@@ -23,16 +24,14 @@ function Card({ image, title, videoId, id }) {
           ></iframe>
         </Modal>
       )}
-      <h3 className={styles.card__tile}>{title}</h3>
+      <Link className={styles.card__link} to={`/card/${id}`}>
+        <h3 className={styles.card__title}>{title}</h3>
+      </Link>
       <img src={image} alt={title} className={styles.card__img} />
-      <button
-        style={{ position: "absolute", right: "3rem", top: "1rem" }}
-        onClick={openVideo}
-      >
-        🎥
-      </button>
-      <Link style={{ position: "absolute", right: "6rem", top: "1rem" }} to={`/card/${id}`}>link</Link>
-      <ButtonIsFavorite />
+      <div className={styles.card__actions}>
+        <ButtonPlayVideo onClick={openVideo} />
+        <ButtonIsFavorite />
+      </div>
     </div>
   );
 }

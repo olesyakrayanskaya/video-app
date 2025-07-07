@@ -2,11 +2,12 @@ import Card from "./components/Card/Card";
 import CardWrapper from "./components/CardWrapper/CardWrapper";
 import Container from "./components/Container/Container";
 import Header from "./components/Header/Header";
-import SearchInput from "./components/SearchInput/SearchInput";
+import SearchInput from "./components/UI/SearchInput/SearchInput";
 import { ITEMS } from "./data";
 import { useState, useContext, useMemo } from "react";
 import useDebounce from "./hooks/useDebounce";
 import { ThemeContext } from "./ThemeContext";
+import ButtomTheme from "./components/UI/ButtonTheme/ButtomTheme";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -23,9 +24,7 @@ function App() {
       <Header>
         <Container>
           <SearchInput onSearchChange={setSearchTerm} />
-          <button onClick={toggleTheme}>
-            {theme === "dark" ? "light" : "dark"}
-          </button>
+          <ButtomTheme theme={theme} onClick={toggleTheme}/>
         </Container>
       </Header>
       <Container>

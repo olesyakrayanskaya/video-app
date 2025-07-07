@@ -14,11 +14,11 @@ function CardDetails() {
   if(!card) return <p>not found</p>
 
   return (
-    <div>
-      <h1>id: #{id}</h1>
-      <img src={card.image} alt={card.title} />
-      <h2>{card.title}</h2>
-      <Link to={'/'}>Home</Link>
+    <div className={styles.details}>
+      <h1 className={styles.details__title}>id: #{id}</h1>
+      <img className={styles.details__img} src={card.image} alt={card.title} />
+      <h2 className={styles.details__subtitle}>{card.title}</h2>
+      <Link className={styles.details__link} to={'/'}>Home</Link>
     </div>
   );
 }

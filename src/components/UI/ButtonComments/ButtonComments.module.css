@@ -1,0 +1,18 @@
+.btn_comments {
+    background-color: transparent;
+    padding: 0.5rem;
+    border: 1px solid #413f3f;
+    transition: background-color var(--transition-time, 0.4s);
+}
+
+@media (hover:hover) {
+    .btn_comments:hover {
+        background-color: #413f3f26;
+    }
+}
+
+@media (hover:none) {
+    .btn_comments:active {
+        background-color: #413f3f26;
+    }
+}

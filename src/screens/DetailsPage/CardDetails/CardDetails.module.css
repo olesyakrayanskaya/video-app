@@ -1,5 +1,10 @@
 .details {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .details__title {
@@ -13,6 +18,24 @@
     object-position: center;
 }
 
-.details__subtitle {}
+.details__subtitle {
+    font-size: 2rem;
+}
 
-.details__link {}
+.details__link {
+    font-size: 1.5rem;
+    color: var(--text-color, #0e010e);
+    transition: color var(--transition-time, 0.4s);
+}
+
+@media (hover:hover) {
+    .details__link:hover {
+        color: var(--text-hover-color, #3c0856);
+    }
+}
+
+@media (hover:none) {
+    .details__link:active {
+        color: var(--text-hover-color, #3c0856);
+    }
+}

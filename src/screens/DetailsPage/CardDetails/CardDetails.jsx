@@ -3,8 +3,11 @@ import styles from "./CardDetails.module.css";
 import { useMemo, Suspense, lazy } from "react";
 import { ITEMS } from "../../../data";
 import { Link } from "react-router-dom";
+import Loader from "../../../components/Loader/Loader";
 
-const LazyDetailsComments = lazy(() => import('../DetailsComments/DetailsComments'));
+const LazyDetailsComments = lazy(() =>
+  import("../DetailsComments/DetailsComments")
+);
 
 function CardDetails() {
   const { id } = useParams();
@@ -23,7 +26,7 @@ function CardDetails() {
       <img className={styles.details__img} src={card.image} alt={card.title} />
       <h2 className={styles.details__subtitle}>{card.title}</h2>
       <p className={styles.details__description}>{card.description}</p>
-      <Suspense fallback={<div>Loading comments...</div>}>
+      <Suspense fallback={<Loader />}>
         <LazyDetailsComments />
       </Suspense>
     </div>

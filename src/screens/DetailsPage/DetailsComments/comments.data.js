@@ -18,4 +18,24 @@ export const COMMENTS = [{
     name: 'Vasiliy Gold',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit saepe beatae nobis fugiat illum, repellat maxime necessitatibus ex sunt tenetur nesciunt possimus aperiam eum laborum doloremque labore, doloribus asperiores quae. Sunt alias magni, nemo mollitia tempore hic deleniti pariatur vitae est facere quidem fugiat harum qui eos ullam et voluptatibus dicta? Dolores nulla, maiores exercitationem cum tenetur sint ut!',
 },
+{
+    id: '5-c',
+    name: 'Elena Petrova',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit saepe beatae nobis fugiat illum, repellat maxime necessitatibus ex sunt tenetur nesciunt possimus aperiam eum laborum doloremque labore, doloribus asperiores quae. Sunt alias magni, nemo mollitia tempore hic deleniti pariatur vitae est facere quidem fugiat harum qui eos ullam et voluptatibus dicta? Dolores nulla, maiores exercitationem cum tenetur sint ut!',
+},
+{
+    id: '6-c',
+    name: 'Chai Woo',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit saepe beatae nobis fugiat illum, repellat maxime necessitatibus ex sunt tenetur nesciunt possimus aperiam eum laborum doloremque labore, doloribus asperiores quae. Sunt alias magni, nemo mollitia tempore hic deleniti pariatur vitae est facere quidem fugiat harum qui eos ullam et voluptatibus dicta? Dolores nulla, maiores exercitationem cum tenetur sint ut!',
+},
+{
+    id: '7-c',
+    name: 'Petty Blue',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit saepe beatae nobis fugiat illum, repellat maxime necessitatibus ex sunt tenetur nesciunt possimus aperiam eum laborum doloremque labore, doloribus asperiores quae. Sunt alias magni, nemo mollitia tempore hic deleniti pariatur vitae est facere quidem fugiat harum qui eos ullam et voluptatibus dicta? Dolores nulla, maiores exercitationem cum tenetur sint ut!',
+},
+{
+    id: '8-c',
+    name: 'Amadeus',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fugit saepe beatae nobis fugiat illum, repellat maxime necessitatibus ex sunt tenetur nesciunt possimus aperiam eum laborum doloremque labore, doloribus asperiores quae. Sunt alias magni, nemo mollitia tempore hic deleniti pariatur vitae est facere quidem fugiat harum qui eos ullam et voluptatibus dicta? Dolores nulla, maiores exercitationem cum tenetur sint ut!',
+},
 ]

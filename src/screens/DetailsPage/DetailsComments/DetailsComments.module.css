@@ -9,12 +9,19 @@
     font-size: 1.2rem;
 }
 
+.comments__container {
+    overflow: hidden;
+    transition: height var(--transition-time, 0.4s) ease;
+}
+
 .comments__list {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    align-items: flex-start;
-    list-style: none;
+    gap: 1rem;
+}
+
+.comments__list:has(.comments__item_appearing) {
+    margin-top: 1rem;
 }
 
 .comments__item {
@@ -23,6 +30,30 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.comments__item_appearing {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fade-in var(--transition-time, 0.4s) ease forwards;
+}
+
+.comments__item_hiding {
+    animation: fade-out var(--transition-time, 0.4s) ease forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
 }
 
 .comments__name {

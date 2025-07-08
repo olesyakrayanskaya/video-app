@@ -1,6 +1,7 @@
 .btn_comments {
     background-color: transparent;
     padding: 0.5rem;
+    width: 7.5rem;
     border: 1px solid #413f3f;
     transition: background-color var(--transition-time, 0.4s);
 }

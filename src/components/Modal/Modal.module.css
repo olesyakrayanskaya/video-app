@@ -1,4 +1,4 @@
-.modal{
+.modal {
     background-color: var(--modal-bcg, #454345);
     position: fixed;
     inset: 0;
@@ -6,6 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: scale3d(0.5);
+    animation: fade-in var(--transition-time, 0.4s) linear forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: scale3d(1);
+    }
 }
 
 .modal__inner {

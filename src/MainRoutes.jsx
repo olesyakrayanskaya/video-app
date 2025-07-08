@@ -4,7 +4,7 @@ import CardDetails from "./screens/DetailsPage/CardDetails/CardDetails";
 
 function MainRoutes() {
   return (
-    <Router>
+    <Router basename="/video-app">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/card/:id" element={<CardDetails />} />

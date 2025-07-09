@@ -6,6 +6,11 @@
     transition: background-color var(--transition-time, 0.4s);
 }
 
+.btn_comments_dark {
+   border: 1px solid #fff;
+   color: #fff; 
+}
+
 @media (hover:hover) {
     .btn_comments:hover {
         background-color: #413f3f26;

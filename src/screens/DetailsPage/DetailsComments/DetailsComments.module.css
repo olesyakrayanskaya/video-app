@@ -32,6 +32,10 @@
     gap: 12px;
 }
 
+.comments__item_dark {
+   border: 1px solid #fff; 
+}
+
 .comments__item_appearing {
     opacity: 0;
     transform: translateY(10px);

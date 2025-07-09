@@ -15,6 +15,8 @@ function DetailsComments() {
   const extraComments = COMMENTS.slice(BASE_COMMENTS_COUNT);
   const visibleExtraComments = extraComments.slice(0, visibleExtraCount);
 
+  const theme = localStorage.getItem("theme");
+
   const showMoreComments = () => {
     setIsHiding(false);
     setListHeight("auto");
@@ -56,7 +58,7 @@ function DetailsComments() {
         <div ref={baseListRef}>
           <ul className={styles.comments__list}>
             {baseComments.map((comment) => (
-              <li className={styles.comments__item} key={comment.id}>
+              <li className={`${styles.comments__item} ${theme === 'dark' ? styles.comments__item_dark : ''}`} key={comment.id}>
                 <p className={styles.comments__name}>{comment.name}</p>
                 <p className={styles.comments__text}>{comment.text}</p>
               </li>

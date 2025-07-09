@@ -69,5 +69,5 @@ html {
 }
 
 html.dark {
-    background-color: var(--dark-bgc, #300330);
+    background-color: var(--dark-bgc, #300330);    
 }

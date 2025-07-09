@@ -7,6 +7,10 @@
     align-items: flex-start;
 }
 
+.details_dark {
+    color: #FFF;
+}
+
 .details__title {
     font-size: 1.5rem;
 }
@@ -26,6 +30,10 @@
     font-size: 1.5rem;
     color: var(--text-color, #0e010e);
     transition: color var(--transition-time, 0.4s);
+}
+
+.details__link_dark {
+    color: #FFF;
 }
 
 @media (hover:hover) {
